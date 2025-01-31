@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AIRBNB</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="headerflex">
+            <img class="pfp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfjJT3vAldYrJRwZ0tDsA9CAebJVbYtoiug&s" alt="">
+            <div class="headertext" style="white-space: pre;"><p>Stays          Experienxes</p></div>
+            
+            
+            <div class="login " style="white-space: pre;" >
+                <p style="font-weight: 600;">Airbnb your home     &#127760;         </p> 
+               <a href="login.html" target="_blank"><img style="width: 40px ; height: 40px; object-fit: contain; border-radius: 50%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_BFER64IYlc1tZ7x6L5v3mBhnl-CgIcWhQ&s" alt=""></a>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="contents">Where <br> <p style="font-size: 14px; padding: 2px; color: grey;">Search Destinations</p></div>
+            <div class="contents">Cheak in <br><p style="font-size: 14px; padding: 2px; color: grey;">Add dates</p></div>
+            <div class="contents">Cheak Out <br><p style="font-size: 14px; padding: 2px; color: grey;">Add dates</p></div>
+            <div class="contents">Who <br> <p style="font-size: 14px; padding: 2px; color: grey;">Number of Guests</p></div>
+            <div><img style="height: 50px; width: 50px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAhFBMVEUAAAD///8ICAj7+/vGxsbx8fElJSX4+Pj19fU2NjYEBARoaGgPDw8UFBTr6+sLCwsaGhri4uIqKiovLy9NTU1cXFxFRUUcHBzZ2dlycnK7u7vPz8+rq6tSUlKJiYmenp6UlJS0tLR8fHw6OjqCgoJubm6MjIxkZGSdnZ1QUFCmpqZBQUEprm5LAAAJmElEQVR4nO2da3eqOhCGERVveEHFexXU2u72//+/g3X3kJjbzCQB1l6+X1uBh5CZZCaZBK1/REHdD+BKL5Cm6QXSNL1AmqYXSNP0AmmaXiBN0wsErF6/kPe7eAPZ5Nk5/V6s4+ChcBwNlqPrqTPxdEP3IL3OLV2EgVLjy+i0cX5XxyC93XagYSgVr457p3d2CZJkKxDE/02TfnXd3d0VSHIbYCD+Klw6Y3EC0vtaDQkYD5Z05+IRXIAk5zGV4qHo6KBZrEH2b+TGKDV9T2oG6SztKX40TC1NshXIfuUI40epVatYgCSpS4xC4buF2yeD9M4opwFTnFUOkkfuMe5adCoFmbz5wbhrRBsqk0AOlo5Dr4jUKASQvutOLmjbqwJk76l3sBrgLTEa5NODsRIVHzyDtEdVYNy19Qoy+a6KIwiWOOuFAtlU0D1KLVAdBQPS8Wp1Rc0ws2EEyG5aLUfR5REeBQ6SV2KueE3hs0cwSB0cxYA4dw2SO5gHkkigbQIE2dXSHndNgf0EBrKPzXf0pTHMdoFANhXbXV4zkD+BgHTndXIUnhHi4wEgbachBor+uAF5r5sjCM4uQL7qprgrtwfZVD4wkSk2dngTSK/mjv6rgWn2awJpQAd5yDTRMoDs6n7+UgYPrwfprut+/FKR3pvoQSqboUP0Tgfp1P3svLQflw6k3RCL9asBFSSr+8mfpYvVa0AmNY7d5Rpr8icakMa4kFIaZ6IG2VhPbqM/5+yw2+3y03E0cDLSCdUjFTWIXcx9PDo8fQed68We5AMPYtUgb3lbds3kautgh8rcrxKE3iDhSJ1pbp8sTXqKBUnIDfKmT5i3M6sAwFDVS1QgW+KN1uY4VNeq96kMlwKkSzQyKWhVyZeFh4oVd1CAZLS7HCEYLbv8xA0FQuqS8EBtq0s3xXMMCGnYCw7T3tWn577kg2A5yAfh+kPcArI+uU3kTlEK0qd09ZNwmW6+XUXxcBjP364dwUNOqP1kKp0qSkEOhMsLZjF/4yL449FzMJocaPoCgxBWmgye3vhhIf7P8slVnoggb1CQPj4ZMuWfMZEvrBs+rc0gesZQ9m3JQAhfFu9AcuUoZMEBU6dusmURMhC8zYq4N51p/nPMGc8bDUQ2cpSB4MfaXPc7av+VS6W1aZZrBgPZoy/MOVtTFx6zX1dG4QgCSTZOAoK/OOtC9kZLMWf6am9GwJCOtyQgaFsSM0/WB3wsI+ZmZwpHsASBoF8S+sGYbrLBUxQaQ0AS9GWZQVYCckEX5naUTQ5BIM5CRRC0F4kZpw6cWDLotG9LHKWIIFfsRZkRQw/o4Zif0DIwYmReBEEv22e8OjRxGpbz1R4pyrECgKB9FPOdgA0e82lIRpdmiS5RAGmj3xATUQRHepjJEW3kKIQgBBC0PQzL38IN3qL8Ea23C/NdASTHXjIqfwvvuAx9hr3hjwSzJYCgr8vkkRAzpfJ7pExHJYEnAQRtfRnvlsF/VXo09CfwI8H+CiDoRC5jCRHTC1sQYborgKDn67QWKWPRNJDL83MLIOhwEzMZQSwkKgfMtBCEEG8UQND+ifFN8AAlM3ylTXfXRhD85LN8uV3wb5iORcu5xkYQ/ISdmXeCm5NZEkcLAg+NIPh8EuObwOkhxjHTJrvBcwjWAQgzQYR2EuYLp00RvYCwBgSYV2G+rE/0/R4yghBamslPwmxpyAyYqQnF5+d20NnZ4Aws4sZE7kkZjLuMIISkG7v8CDIAnjGTCdqQkRs+K0AoUQ028AcIHOfMv1MzcEJASAChrB9ng8p9Y5OyKSF8ePavoufnth80Bk+LdhKDuViy9oa8dkBYTSeAkEYMXJx/ryVZsVkacoOIYRQBRJ8UUIkLj+uWA6RcJoW+D0JI7QogtFE1n0Lsqr7PkA+jW+wfuBpBiGuvny58kLqjbz5kO7FYJyQkwwUQfAz7R+FTfKZ/E1AGOf8vVhtshNUJYqSR6GpnzytA23nKvPFoK2SZqCupfiQs2xJBSCHMQgNJ0nhzuG4/Pra3XLJcjJpl/5Ewr5KAkE37N6rAAXVs8pAQe5CA0OzvXStELaO23TJNcWGNCGKxZWSBqDTTsdprKi4uF0HgEQRRa8S+batNaGJ+WpIMtSkjMLxKF/xKZWG1puJdJCCUVWelEDVz6CWtvsWLSUBsNx6CK2X1qZZeHKBIQYi+vdQwVbVK/5P7S0Ido0iuL1tU46DWxuIoNkt7N4qDMecaiaYrlnREGYjV2OF/RR9ZWe8z2R2Xj9Q1vxWaFgySrOCQgjjcfDiN5oPLYs2+eD6zQXppn0CQtt99+NxW6DbBdA1lfle6ONPOABvFJTIJu/4lxlcB4nljKz93wddhkG5+k6/EJkbIoeJN1w65RCGUjujkIG7sllq86cpwP5Yu+1WA0MM0pIfBhaByBAg+JYoVb7owcdq1fFiqAPFf6IEzXZjpomScpQHpeS/pwpkuxBxI3tXVm8XQKznQ4grQwH+m2lKpAqHuFkOIMV2IAbdqjqDcUOnbAges6YIHPOS2VwcCW/hqp1/TlcB3LShLO6k3HVfQJH9rfXbgoSF1FSE1SCX78mfv2RURAlbvOdZtzPdvuNBS7wLXgfQaVBTloammgpCueIVdeNaDdDtotXVRaq8QxmuuC/5pQTa11QKUSrv1VF9yhx6Z9yBNTzeCoMbXnrXWJy0MZanMO6Yqk2FPs6lQWFb38/9qZHhQYw06V6dAWGphW7qtNfEcUYFpaozwm8sb2uXIHEm68xsJ0srqpgCVLIfUMvUcQTVLFn2ngNRdzHQOSXuDyuR2yTkyF1o7K5NbzEVrHNHHDgsXF8PH2oyw21LS9RVhdl3cuxh11UICr34DBqnl6/JRAL8gqbzH+zmSoLBdFVthX4dEFP6kUs/o79iOKg+ECYI/Hg9SaVV1RE8AKkxuBYIJ1FoozrHPhQZpTSqYM1Zx/FOhzPPnNTzDl+FZgbQ2XqNElR2RVqh989Yow22Fh9YV2nhyKQPqucFUkJaXExFnspVYvkFavaPjAXF4tjg13AKkGLKcHSaxQ7sjaa1ACqdydpRpDEeWJ+taghStcnQwTxmfrY9ttwYpbPHB8ky+wadF33AIUmhzJo/AYqGiJk1uQArtPgg2LE7lVcAJcgZSqHNGrRiN3neEQ05VcglSaHIYgWCij5PlodnPcgxyV79zSwdKqxzO0+PO2kaJ8gDyUNL5um3T5WURrQtFi8sq3R5PO+tz2FXyBlK1XiBN0wukaXqBNE0vkKbpBdI0vUCaphdI0/TPgPwHi/eZG5dOgy8AAAAASUVORK5CYII=" alt=""></div>
+        </div>
+    </header>
+
+
+
+    <br>
+    <div style="border: 1px solid lightgray; "></div>
     
-</body>
+    
+    <nav class="navbar">
+        <div class="nav">
+            <button class="navimages" id="farms" ><div class="imgdiv"> 
+                <img class="img" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt=""> <br>Farms
+             </div></button>
+            
+            <button class="navimages"><div class="imgdiv">
+                <img class="img" src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt=""><br>Icons
+            </div></button>
+            <button class="navimages"> <div class="imgdiv">
+                <img class="img" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt=""><br>Beachfront
+            </div></button>
+           
+            <button class="navimages"><div class="imgdiv"> 
+                <img class="img" src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt=""><br>OMG!
+            </div></button>
+            <button class="navimages"><div class="imgdiv"><img class="img" src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt=""><br>Luxe
+            </div></button>
+            <button class="navimages"><div class="imgdiv">
+                <img class="img" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt=""><br>Amazing View
+            </div></button>
+            <button class="navimages"><div class="imgdiv">
+                <img class="img" src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt=""><br>Country side
+            </div></button>
+            <button class="navimages"><div class="imgdiv">
+                <img class="img" src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt=""><br>Rooms
+            </div></button>
+            <button class="navimages"><div class="imgdiv">
+                <img class="img" src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt=""><br>Lakefront
+            </div></button>
+            <button class="btn" style="margin-top: 10px;"><div ><img class="filter" src="data:image/png;base64,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" alt="">
+                Filters</div></button>
+            <button class="btn tax" style="margin-top: 10px; width: 250px;"><div >
+                Display total before taxes     <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+            </div></button>
+            
+            
+        </div>
+    </nav>
+    
+    <div style="border: 1px solid ;"></div>
+
+
+    <body  >
+        <div class="main">
+            <div class="places">
+                <div class="place">
+                    <img class="images" src="https://a0.muscache.com/im/pictures/3aa09cd0-bcec-430e-9f25-7384cffb6a58.jpg?im_w=720&im_format=avif" alt="">
+                    <p class="title">Coimbatore, India &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9733; 5.0</p>
+                    <p class="details">239 kilometers away <br>5-10 Feb</p>
+                    
+                    <div class="price">&#8377;1,836 per night</div>
+                </div>
+        
+                <div class="place">
+                    <img class="images" src="https://a0.muscache.com/im/pictures/458e3fa3-3b67-4dc5-87b3-65178557429b.jpg?im_w=720&im_format=avif" alt="">
+                    <p class="title">Karnataka, India &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9733; 4.8</p>
+                    <p class="details">199 kilometers away <br>1-6 Feb</p>
+                 
+                    <div class="price">&#8377;6,643 per night</div>
+                    
+                </div>
+                  <div class="place">
+                    <img class="images" src="https://a0.muscache.com/im/pictures/c1231e97-b1ca-433f-ac48-0cf3c508f9a7.jpg?im_w=720&im_format=avif" alt="">
+                    <p class="title">Kotthara, India &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9733; 4.3</p>
+                    <p class="details">225 kilometers away <br>9-14 Feb</p>
+                
+                    <div class="price">&#8377;1,836 per night</div>
+                    
+            
+                </div>
+                <div class="place">
+                    <img class="images" src="https://a0.muscache.com/im/pictures/458be275-af05-4cd6-ae4c-48dbfc0b5d5d.jpg?im_w=720&im_format=avif" alt="">
+                    <p class="title">Bengaluru , India &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#9733; 5.0</p>
+                    <p class="details">25 kilometers away <br>5-10 Feb</p>
+                    
+                    
+                    <div class="price">&#8377;1,836 per night</div>
+
+        </div>
+
+
+        
+
+        
+        
+
+    </body>
+    <div></div>
+
+
+
 </html>
